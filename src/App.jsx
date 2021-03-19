@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 import Home from './views/Home';
 import ListBeers from './views/ListBeers';
 import SingleBeer from './views/SingleBeer';
+import RandomBeer from './views/RandomBeer';
 
 import './App.css';
 
@@ -18,8 +19,11 @@ function App() {
             render={(props) => <SingleBeer {...props} exact />}
           />
 
-          {/* <Route path="/random-beer" component={RandomBeer} exact />
-        <Route path="/new-beer" component={NewBeer} exact /> */}
+          <Route
+            path="/random-beer"
+            render={(props) => <RandomBeer {...props} exact />}
+          />
+          {/* <Route path="/new-beer" component={NewBeer} exact />  */}
         </Switch>
       </BrowserRouter>
     </div>
