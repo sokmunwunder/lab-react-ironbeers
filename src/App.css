@@ -13,3 +13,21 @@
   width: 100%;
   padding-left: 600px;
 }
+
+.beerlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.beerimg {
+  width: 40px;
+}
+
+.singlebeerlink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.imageSingleBeer {
+  width: 40px;
+}
